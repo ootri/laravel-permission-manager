@@ -1,0 +1,11 @@
+/vendor
+/node_modules
+.env
+.env.*.local
+.idea/
+.vscode/
+.DS_Store
+/storage
+/tests/.env
+/tests/storage
+/phpunit.xml
