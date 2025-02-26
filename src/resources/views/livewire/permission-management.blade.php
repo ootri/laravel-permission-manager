@@ -6,11 +6,11 @@
     <div class="mb-6">
         <h3 class="font-semibold">Roles</h3>
         <input type="text" wire:model="roleName" placeholder="Role Name" class="border p-2 mr-2">
-        <button wire:click="createRole" class="bg-blue-500 text-white p-2 rounded">Add Role</button>
+        <button wire:click="createRole" class="bg-blue-500 text-white p-2 rounded-sm">Add Role</button>
         
         <ul>
             @foreach($roles as $role)
-                <li class="flex justify-between items-center mt-2 bg-gray-100 p-2 rounded">
+                <li class="flex justify-between items-center mt-2 bg-gray-100 p-2 rounded-sm">
                     {{ $role->name }}
                     <button wire:click="deleteRole({{ $role->id }})" class="text-red-500">Delete</button>
                 </li>
@@ -22,11 +22,11 @@
     <div class="mb-6">
         <h3 class="font-semibold">Permissions</h3>
         <input type="text" wire:model="permissionName" placeholder="Permission Name" class="border p-2 mr-2">
-        <button wire:click="createPermission" class="bg-green-500 text-white p-2 rounded">Add Permission</button>
+        <button wire:click="createPermission" class="bg-green-500 text-white p-2 rounded-sm">Add Permission</button>
         
         <ul>
             @foreach($permissions as $permission)
-                <li class="flex justify-between items-center mt-2 bg-gray-100 p-2 rounded">
+                <li class="flex justify-between items-center mt-2 bg-gray-100 p-2 rounded-sm">
                     {{ $permission->name }}
                     <button wire:click="deletePermission({{ $permission->id }})" class="text-red-500">Delete</button>
                 </li>
@@ -51,8 +51,8 @@
             @endforeach
         </select>
         
-        <button wire:click="assignRole" class="bg-yellow-500 text-white p-2 rounded">Assign Role</button>
-        <button wire:click="revokeRole" class="bg-red-500 text-white p-2 rounded">Revoke Role</button>
+        <button wire:click="assignRole" class="bg-yellow-500 text-white p-2 rounded-sm">Assign Role</button>
+        <button wire:click="revokeRole" class="bg-red-500 text-white p-2 rounded-sm">Revoke Role</button>
 
         <h3 class="font-semibold mt-6">Current User Role Assignments</h3>
         <div class="mt-2">
@@ -88,8 +88,8 @@
             @endforeach
         </select>
         
-        <button wire:click="assignPermission" class="bg-blue-500 text-white p-2 rounded">Assign Permission</button>
-        <button wire:click="revokePermission" class="bg-red-500 text-white p-2 rounded">Revoke Permission</button>
+        <button wire:click="assignPermission" class="bg-blue-500 text-white p-2 rounded-sm">Assign Permission</button>
+        <button wire:click="revokePermission" class="bg-red-500 text-white p-2 rounded-sm">Revoke Permission</button>
 
         <h3 class="font-semibold mt-6">Current Role Permission Assignments</h3>
         <div class="mt-2">
@@ -128,8 +128,8 @@
         </select>
 
         <!-- Assign and Revoke Buttons -->
-        <button wire:click="assignUserPermission" class="bg-blue-500 text-white p-2 rounded">Assign Permission</button>
-        <button wire:click="revokeUserPermission" class="bg-red-500 text-white p-2 rounded">Revoke Permission</button>
+        <button wire:click="assignUserPermission" class="bg-blue-500 text-white p-2 rounded-sm">Assign Permission</button>
+        <button wire:click="revokeUserPermission" class="bg-red-500 text-white p-2 rounded-sm">Revoke Permission</button>
 
 
         <h3 class="font-semibold mt-6">Current User Permission Assignments (Direct)</h3>

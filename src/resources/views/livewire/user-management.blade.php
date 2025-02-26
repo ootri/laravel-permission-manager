@@ -7,7 +7,7 @@
         <input type="text" wire:model="name" placeholder="Name" class="border p-2 mr-2 mb-2 w-full">
         <input type="email" wire:model="email" placeholder="Email" class="border p-2 mr-2 mb-2 w-full">
         <input type="password" wire:model="password" placeholder="Password" class="border p-2 mr-2 mb-2 w-full">
-        <button wire:click="createUser" class="bg-green-500 text-white p-2 rounded w-full">Add User</button>
+        <button wire:click="createUser" class="bg-green-500 text-white p-2 rounded-sm w-full">Add User</button>
     </div>
 
     <!-- User List -->
